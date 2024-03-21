@@ -20,9 +20,11 @@ When you need to apply a function to each element of the array, you can either u
 map(int,input().split())         # no conversion needed
 list(map(int,input().split()))   # need to convert
 [int(x)for x in input().split()] # map is better in both cases
+
 # 2 - using a complex iterable: [input()for _ in' '*int(input())]
 [sorted(input())for _ in' '*int(input())]
 map(sorted,[input()for _ in' '*int(input())]) # LC is better, because we can embed the applied function into the iterable
+
 # 3 - use case for list comprehension
 [int(x)**2 for x in input()]
 map(lambda x:int(x)**2,input()) # list comprehension is better because of lambda expression in map
